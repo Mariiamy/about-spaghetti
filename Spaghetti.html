@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaghetti</title>
+    <style>
+
+        h1 {
+            text-align: center;
+            color: #f3f2f5;
+            border: 1px solid #d6cbf2;
+            border-radius: 4px;
+            font-size: 40px;
+            padding: 15px;
+            }
+
+        h2 {
+            text-align: center;
+            margin: 5px 5px;
+            padding: 1px 10px 10px 10px;
+            font-size: 35px;
+            color: #f3f2f5;
+        }
+
+        img {
+            display: block;
+            border: 1px;
+            margin: 0 auto;
+            max-width: 80%;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 20px;
+            margin: 20px 0 10px;
+            color: rgb(67, 62, 62);
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background: #f19b6a;
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px 60px;
+            border: 1px solid #d6cbf2;
+            border-radius: 10px;
+            background: linear-gradient(179.7deg, rgb(248, 126, 126) -0.5%, rgb(251, 206, 143) 35.3%, rgb(184, 252, 233) 67.2%, rgb(118, 162, 229) 92.3%);
+        }
+
+        .learn-more {
+            color: rgb(89, 85, 85);
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            I love Spaghetti
+        </h1>
+        <h2>
+            <em>Spaghetti Alle Vongole</em>
+        </h2>
+        <hr />
+        <img src="https://img-global.cpcdn.com/recipes/2cfc871f33c56c8bf56a2e78a1c956faf0c2de992d004678c4f68d58ab0dc8d5/680x482cq70/pasta-s-morieproduktami-v-slivochnom-sousie-rietsiept-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-%D1%84%D0%BE%D1%82%D0%BE-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0.webp"
+            alt="Spaghetti" />
+        <hr />
+        <p>
+            <em><strong>Spaghetti Alle Vongole</strong></em> is a dish that is
+            very popular throughout Italy, especially in Campania (where it is part of traditional Neapolitan cuisine).
+        </p>
+        <small>
+            <a href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_blank" class="learn-more">
+                Learn more on Wikipedia
+            </a>
+        </small>
+        <br>
+        <button class="eat-button">
+            Eat <em>Spaghetti Alle Vongole</em> with us
+        </button>
+        <p class="footer">
+            This page was create by
+            <a href="https://en.wikipedia.org/wiki/Spaghetti_alle_vongole" target="_blank">
+                Mariia Balenko
+            </a>
+        </p>
+    </div>
+    <script>
+
+    document.querySelector('.eat-button').addEventListener('click', function () {
+        let name = prompt('What is your name?');
+        if (name.length) {
+            alert(
+                "Thank you, " +
+                name +
+                "! We'll be in touch by email, meanwhile we love to cook Spaghetti alle vongole for you! ");
+        } else {
+            alert("No name, no order to Spaghetti alle vongole!")
+        }
+    });
+    </script>
+</body>
+
+</html>
